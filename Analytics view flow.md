@@ -12,6 +12,7 @@ Function **controlAnalyticsViewFlow** will be called first from index.php to con
 #### Step 2:
 
 - Function **getPostDataByYear** from controller page and redirected to action page which is used to call the posted jobs by year.
+- Input parameters will be User id.
 - In action page, first wsdl client connection will be set by function **setWSDLHandle**.
 - From action page, Function **getPostDataByYear** will be redirected to AnalyticsWS.php which is used to send data to DB for get posted jobs by year.
 - Getting the mysql DB connection and calling the query from DB.
@@ -20,6 +21,7 @@ Function **controlAnalyticsViewFlow** will be called first from index.php to con
 #### Step 3:
 
 - Function **getShareDataByYear** from controller page and redirected to action page which is used to call the shared jobs by year.
+- Input parameters will be User id.
 - In action page, first wsdl client connection will be set by function **setWSDLHandle**.
 - From action page, Function **getShareDataByYear** will be redirected to AnalyticsWS.php which is used send data to DB for get shared jobs by year.
 - Getting the mysql DB connection and calling the query from DB.
@@ -28,6 +30,7 @@ Function **controlAnalyticsViewFlow** will be called first from index.php to con
 #### Step 4:
 
 - Function **getPostDataBydays** from controller page and redirected to action page which is used to call the posted jobs by days.
+- Input parameters will be User id.
 - In action, first wsdl client connection will be set by function **setWSDLHandle**.
 - From action page, Function **getPostDataBydays** will be redirected to AnalyticsWS.php which is used send data to DB for get posted jobs by days.
 - Getting the mysql DB connection and calling the query from DB.
@@ -37,6 +40,7 @@ Function **controlAnalyticsViewFlow** will be called first from index.php to con
 #### Step 5:
 
 - Function **getShareDataBydays** from controller page and redirected to action page which is used to call the shared jobs by days.
+- Input parameters will be User id.
 - In action, first wsdl client connection will be set by function **setWSDLHandle**.
 - From action page, Function **getShareDataBydays** will be redirected to AnalyticsWS.php which is used send data to DB for get shared jobs by custome dates.
 - Getting the mysql DB connection and calling the query from DB.
@@ -46,6 +50,7 @@ Function **controlAnalyticsViewFlow** will be called first from index.php to con
 #### Step 6:
 
 - Function **showYeardataView** from controller page and redirected to action page which is used to show the shared and posted job graph form.
+- Input parameters will be post data, shared data.
 - From action page, function **showYeardataView** will be redirected to AnalyticsView.php to display the tpl page.
 - The display tpl page will be **AnalyticsForm4.tpl** which will be in views folder.
 
